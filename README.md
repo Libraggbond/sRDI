@@ -67,6 +67,9 @@ After building the project, the other binaries will be located at:
 - `bin\TestDLL_<arch>.dll`
 - `bin\ShellcodeRDI_<arch>.bin`
 
+##测试过程
+
+测试成功的过程是用stager.dll生成的CS的dll，使用ConvertToShellcode.py -f 参数导出 Exec的函数，之后使用NativeLoader.exe 执行bin文件。这个主要是编译过程的问题，使用VS2019编译需要先安装VS2017的编译组件。
 
 ## Alternatives
 If you find my code disgusting, or just looking for an alternative memory-PE loader project, check out some of these:
